@@ -6,6 +6,5 @@ int main() {
     BuscaValor(size);
 
     return 0;
-    pila
-    cona
+   
 }
