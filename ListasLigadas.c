@@ -17,17 +17,28 @@ struct Node* createNode(int data) {
 
 int main() {
     // Criação dos nós da lista ligada
-    struct Node* head = createNode(2);
-    struct Node* second = createNode(4);
-    struct Node* third = createNode(6);
+    struct Node* head = createNode(1);
+    struct Node* second = createNode(2);
+    struct Node* third = createNode(4);
+    struct Node* fourth = createNode(5);
+    struct Node* fifth = createNode(6);
+    struct Node* sixth = createNode(7);
+    struct Node* seventh = createNode(8);
+    struct Node* eight = createNode(9);
+
 
     // Conexão dos nós para formar a lista ligada
     head->next = second;
     second->next = third;
+    third->next = fourth;
+    fourth->next = fifth;
+    fifth->next = sixth;
+    sixth->next = seventh;
+    seventh->next = eight;
 
     // Inserção de um novo nó no final da lista ligada
-    struct Node* newTail = createNode(8);
-    third->next = newTail;
+    struct Node* newTail = createNode(10);
+    eight->next = newTail;
 
     // Impressão dos valores dos nós da lista ligada
     struct Node* current = head;
